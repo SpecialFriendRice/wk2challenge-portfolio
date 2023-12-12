@@ -5,39 +5,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
+  <title>Portfolio page</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <h1>Corinne Borgeaud</h1>
     <nav>
+      <ul>
+        <li>
+          <a href="#about">About me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact me</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2>Design doesn't have to be dull</h2>
     </div>
   </section>
-
+  
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
+      <h3>About Me</h3>
+      <div id="aboutgrid">
+        <div id="photocolumn" class="aboutgridarea">
+          <img src="/assets/images/Profile-photo-small.png">
+        </div>
+        <div id="textcolumn" class="aboutgridarea">
+        <p>I've made the jump from managing projects in the contruction and media industries to front end web design, bringing with me the time-management and teamworking skills necesary to deliver to schedule and budget.</p>
+        <br>
+        <p>Used to working with all levels from senior executives to the public, I am confident in putting forward a fully-rounded and polished design concept with functionality built around the end user. Having worked in the visual arts, I know the importance of first impressions and a cohesive brand identity. </p>
+        <br>
+        </div>
+      </div>
+      </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2>Work</h2>
+      <h3>Work</h3>
+      <div id="workexamplegrid">
+        <div id="project1" class="workexamplegridarea">
+          <div class="heading">Pre-work Study Guide</div>
+          <a href="https://specialfriendrice.github.io/prework-study-guide/" target="_blank">
+            <img src="/assets/images/Prework-study-guidesmall.png ">
+          </a>
+          
+        </div>
+        <div id="project2" class="workexamplegridarea">
+          <div class="heading">Project Title 2 TBC</div>
+        </div>
+        <div id="project3" class="workexamplegridarea">
+          <div class="heading">Project Title 3 TBC</div>
+        </div>
+        <div id="project4" class="workexamplegridarea">
+          <div class="heading">Project Title 4 TBC</div>
+        </div>
+        <div id="project5" class="workexamplegridarea">
+          <div class="heading">Project Title 5 TBC</div>
+        </div>
+      </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <section class="page-section" id="contact">
+      <h3>Contact Me</h3>
+      <div id="flexcontactbox">
+        <div>+44 7123 456789</div>
+        <div>
+          <a href="mailto:corinneborgeaud@wherever.com">corinneborgeaud@icloud.com</a>
+        </div>
+        <div>
+          <a href="https://github.com/SpecialFriendRice" target="_blank">My GitHub Home</a>
+        </div>
+
+      </div>
     </section>
   </main>
 </body>

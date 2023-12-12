@@ -1,3 +1,7 @@
+:root {
+  --sectionheadcolor: red;
+ }
+
 * {
   box-sizing: border-box;
 }
@@ -7,17 +11,217 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  
 }
 
 h1,
-h2,
+h2
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin-left: 50px;
 }
 
 p {
-  margin: 0;
+  margin-left: 20px;
 }
+
+img {
+  display: inline;
+  height: 180px;
+  margin-top: 20px;
+ 
+}
+
+.hero-banner {
+  background-image: url("../images/decodigitaldesign-pale.png");
+  height: 200px;
+  width: 100%;
+  
+
+  /* BACKGROUND PHOTO
+  height: 300px;
+  width: 70%;
+  margin-bottom: 10px;
+  background-image: url("../images/wallphotosquarish.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;*/
+}
+
+header {
+  height: 100px;
+  background-color: black;
+}
+
+h1 {
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+  margin-right: 40px;
+  padding-top: 15px;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+li a {
+  color: var(--sectionheadcolor)
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block; 
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+h2 {
+  float: left;
+  font-size: 25px;
+  margin-top: 120px;
+  padding: 10px;
+  color: black; 
+}
+
+#aboutgrid {
+  margin: 0px 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutgridarea {
+  display: row;
+}
+
+h3 {
+  color: var(--sectionheadcolor);
+  font-size: 30px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.page-section {
+  display: inline-block;
+  width: 80%;
+  margin-left: 80px;
+}
+
+#workexamplegrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "project1 project1"
+    "project2 project3"
+    "project4 project5"
+    ;
+
+}
+
+a img {
+  width: 50%;
+  margin-left: 150px;
+  margin-top:-5px;
+}
+
+#project1 {
+  grid-area: project1;
+  /*background-image: url("../images/Prework-study-guidesmall.png");*/
+  background-position: top;
+}
+
+#project2 {
+  grid-area: project2;
+  background-image: url("../images/colourfulcogs.jpeg");
+  
+}
+
+#project3 {
+  grid-area: project3;
+  background-image: url("../images/colourfulcogs.jpeg");
+ 
+}
+
+#project4 {
+  grid-area: project4;
+  background-image: url("../images/colourfulcogs.jpeg");
+  
+}
+
+#project5 {
+  grid-area: project5;
+  background-image: url("../images/colourfulcogs.jpeg");
+  
+  
+}
+
+.heading {
+  color: black;
+  background-color: white; 
+}
+.workexamplegridarea {
+  display: grid;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content:flex-start;
+  margin: 10px;
+}
+
+/*could put the contact links in a footer rather than a flexbox*/
+
+#flexcontactbox {
+  display: flex;
+  justify-content: space-around;
+}
+
+div a {
+  color:black
+}
+
+/*media queries for tablet and smartphone screen size*/
+
+@media only screen and (max-width: 880px) {
+  nav {
+    display: none;
+  }
+
+  #workexamplegrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "project5"
+      ;
+  }
+
+  #flexcontactbox {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+  #aboutgrid {
+    flex-direction: column;
+  }
+  }
+  
