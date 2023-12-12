@@ -14,12 +14,12 @@ N/A
 
 ## Usage
 
-![Alt text](assets/images/Screenshot.png)
+![Portfolio webpage screenshoot with portrait photo](assets/images/portfolio-page-screenshot.png)
 
-https://github.com/SpecialFriendRice/wk1challenge-horiseon
+https://github.com/SpecialFriendRice/wk2challenge-portfolio
 
+https://specialfriendrice.github.io/wk2challenge-portfolio/
 
-https://specialfriendrice.github.io/wk1challenge-horiseon/
 
 ## Credits
 
